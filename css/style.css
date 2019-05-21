@@ -1,12 +1,13 @@
 body{
   margin:0;
+  
 }
 
 ul {
   font-family: 'Ubuntu', sans-serif;
   list-style: none;
   text-decoration: none;
-
+  padding-bottom: 1.5rem;
 }
 
 ul:nth-of-type(even) {
@@ -45,6 +46,11 @@ ul:nth-of-type(odd) {
 }
 
 .main__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0;
+}
+
+.greeting {
+  font-family: 'Ubuntu', sans-serif;
 }
