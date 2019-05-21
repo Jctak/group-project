@@ -6,10 +6,19 @@ ul {
   font-family: 'Ubuntu', sans-serif;
   list-style: none;
   text-decoration: none;
+
+}
+
+ul:nth-of-type(even) {
+  background-color: #f9f7f7;
+}
+
+ul:nth-of-type(odd) {
+  background-color: #dbe2ef;
 }
 
 .userInput {
-  background-size: 1280px 700px;
+  background-size: 1280px 750px;
   background-image: url('../images/hero.jpg');
   display: grid;
   justify-content: center;
@@ -33,4 +42,9 @@ ul {
   font-size: 1.5rem;
   width: 14rem;
   margin-left: 7rem;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
 }
